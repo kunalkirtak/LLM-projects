@@ -1,0 +1,328 @@
+2026-08-01 17:03:27.512 | ERROR    | app.providers.gateway:chat:209 - Provider 'gemini' failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-08-01 17:03:27.513 | ERROR    | app.utils.logging:log_request_event:94 - {"request_id": "d9630ef8-e425-4654-948e-aaef22965fac", "provider": "gemini", "model": "gemini-1.5-flash", "prompt_preview": "Hello!", "status": "failure", "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0.0, "latency_ms": 10159.53, "retry_count": 0, "fallback_used": false, "error": "404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods."}
+2026-08-01 17:03:27.515 | WARNING  | app.providers.gateway:chat:143 - Skipping provider 'openai': not configured
+2026-08-01 17:03:27.516 | WARNING  | app.providers.gateway:chat:143 - Skipping provider 'anthropic': not configured
+2026-08-01 17:03:27.517 | ERROR    | app.providers.gateway:chat:233 - All providers exhausted for request d9630ef8-e425-4654-948e-aaef22965fac after 10165ms: [gemini] 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-08-01 17:03:27.518 | ERROR    | app.api.routes:chat:55 - Chat request failed: All providers in fallback chain failed. Attempted: ['gemini']. Last error: [gemini] 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.
+2026-08-01 17:07:46.798 | ERROR    | app.providers.gateway:chat:209 - Provider 'gemini' failed: 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-08-01 17:07:46.801 | ERROR    | app.utils.logging:log_request_event:94 - {"request_id": "94f8cead-b2bd-4c2e-aaab-48cc5dc52268", "provider": "gemini", "model": "gemini-2.5-flash", "prompt_preview": "Hello!", "status": "failure", "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0.0, "latency_ms": 9356.72, "retry_count": 0, "fallback_used": false, "error": "404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements."}
+2026-08-01 17:07:46.802 | WARNING  | app.providers.gateway:chat:143 - Skipping provider 'openai': not configured
+2026-08-01 17:07:46.803 | WARNING  | app.providers.gateway:chat:143 - Skipping provider 'anthropic': not configured
+2026-08-01 17:07:46.804 | ERROR    | app.providers.gateway:chat:233 - All providers exhausted for request 94f8cead-b2bd-4c2e-aaab-48cc5dc52268 after 9362ms: [gemini] 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-08-01 17:07:46.805 | ERROR    | app.api.routes:chat:55 - Chat request failed: All providers in fallback chain failed. Attempted: ['gemini']. Last error: [gemini] 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-08-01 17:10:04.889 | ERROR    | app.providers.gateway:chat:209 - Provider 'gemini' failed: 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-08-01 17:10:04.890 | ERROR    | app.utils.logging:log_request_event:94 - {"request_id": "da029493-7f50-4bb0-bbc0-186a06b6ce79", "provider": "gemini", "model": "gemini-2.5-flash", "prompt_preview": "Hello!", "status": "failure", "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0.0, "latency_ms": 9417.38, "retry_count": 0, "fallback_used": false, "error": "404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements."}
+2026-08-01 17:10:04.893 | WARNING  | app.providers.gateway:chat:143 - Skipping provider 'openai': not configured
+2026-08-01 17:10:04.894 | WARNING  | app.providers.gateway:chat:143 - Skipping provider 'anthropic': not configured
+2026-08-01 17:10:04.895 | ERROR    | app.providers.gateway:chat:233 - All providers exhausted for request da029493-7f50-4bb0-bbc0-186a06b6ce79 after 9423ms: [gemini] 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-08-01 17:10:04.896 | ERROR    | app.api.routes:chat:55 - Chat request failed: All providers in fallback chain failed. Attempted: ['gemini']. Last error: [gemini] 404 This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.
+2026-08-01 17:22:41.233 | ERROR    | app.main:unhandled_exception_handler:57 - Unhandled exception on POST /chat
+  + Exception Group Traceback (most recent call last):
+  |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_utils.py", line 77, in collapse_excgroups
+  |     yield
+  |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 186, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 815, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 185, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    |     self.gen.throw(value)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_utils.py", line 83, in collapse_excgroups
+    |     raise exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\main.py", line 48, in add_process_time_header
+    |     response = await call_next(request)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    |     raise app_exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    |     raise exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    |     await route.handle(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    |     raise exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    |     response = await f(request)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\api\routes.py", line 53, in chat
+    |     return await gateway.chat(request)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 151, in chat
+    |     result, retry_count = await _call_with_retry(
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 87, in _call_with_retry
+    |     async for attempt in retrying:
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 166, in __anext__
+    |     do = await self.iter(retry_state=self._retry_state)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    |     result = await action(retry_state)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    |     return call(*args, **kwargs)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\__init__.py", line 398, in <lambda>
+    |     self._add_action_func(lambda rs: rs.outcome.result())
+    |   File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    |     return self.__get_result()
+    |   File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    |     raise self._exception
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 89, in _call_with_retry
+    |     result = await provider.complete(
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 87, in complete
+    |     gemini_model = self._build_model(model, system_instruction, json_mode)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 70, in _build_model
+    |     return genai.GenerativeModel(
+    | AttributeError: module 'google.genai' has no attribute 'GenerativeModel'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 185, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_utils.py", line 83, in collapse_excgroups
+    raise exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\main.py", line 48, in add_process_time_header
+    response = await call_next(request)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\api\routes.py", line 53, in chat
+    return await gateway.chat(request)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 151, in chat
+    result, retry_count = await _call_with_retry(
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 87, in _call_with_retry
+    async for attempt in retrying:
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 89, in _call_with_retry
+    result = await provider.complete(
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 87, in complete
+    gemini_model = self._build_model(model, system_instruction, json_mode)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 70, in _build_model
+    return genai.GenerativeModel(
+AttributeError: module 'google.genai' has no attribute 'GenerativeModel'
+2026-08-01 17:27:44.707 | ERROR    | app.main:unhandled_exception_handler:57 - Unhandled exception on POST /chat
+  + Exception Group Traceback (most recent call last):
+  |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_utils.py", line 77, in collapse_excgroups
+  |     yield
+  |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 186, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 815, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 185, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    |     self.gen.throw(value)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_utils.py", line 83, in collapse_excgroups
+    |     raise exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\main.py", line 48, in add_process_time_header
+    |     response = await call_next(request)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    |     raise app_exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    |     raise exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    |     await route.handle(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    |     raise exc
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    |     response = await f(request)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    |     return await dependant.call(**values)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\api\routes.py", line 53, in chat
+    |     return await gateway.chat(request)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 151, in chat
+    |     result, retry_count = await _call_with_retry(
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 87, in _call_with_retry
+    |     async for attempt in retrying:
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 166, in __anext__
+    |     do = await self.iter(retry_state=self._retry_state)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    |     result = await action(retry_state)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    |     return call(*args, **kwargs)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\__init__.py", line 398, in <lambda>
+    |     self._add_action_func(lambda rs: rs.outcome.result())
+    |   File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    |     return self.__get_result()
+    |   File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    |     raise self._exception
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 89, in _call_with_retry
+    |     result = await provider.complete(
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 87, in complete
+    |     gemini_model = self._build_model(model, system_instruction, json_mode)
+    |   File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 70, in _build_model
+    |     return genai.GenerativeModel(
+    | AttributeError: module 'google.genai' has no attribute 'GenerativeModel'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 185, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_utils.py", line 83, in collapse_excgroups
+    raise exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 187, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\main.py", line 48, in add_process_time_header
+    response = await call_next(request)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 163, in call_next
+    raise app_exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\base.py", line 149, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 62, in wrapped_app
+    raise exc
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\_exception_handler.py", line 51, in wrapped_app
+    await app(scope, receive, sender)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\starlette\routing.py", line 73, in app
+    response = await f(request)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\api\routes.py", line 53, in chat
+    return await gateway.chat(request)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 151, in chat
+    result, retry_count = await _call_with_retry(
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 87, in _call_with_retry
+    async for attempt in retrying:
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\venv\Lib\site-packages\tenacity\__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gateway.py", line 89, in _call_with_retry
+    result = await provider.complete(
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 87, in complete
+    gemini_model = self._build_model(model, system_instruction, json_mode)
+  File "H:\AIML Job project\llm-project\multi-provider-ai-gateway\app\providers\gemini_provider.py", line 70, in _build_model
+    return genai.GenerativeModel(
+AttributeError: module 'google.genai' has no attribute 'GenerativeModel'
+2026-08-01 17:41:51.161 | INFO     | app.utils.logging:log_request_event:92 - {"request_id": "069e0376-6291-4472-81f2-3ca7457088dd", "provider": "gemini", "model": "gemini-flash-latest", "prompt_preview": "Hello!", "status": "success", "input_tokens": 3, "output_tokens": 9, "total_tokens": 12, "estimated_cost_usd": 3e-05, "latency_ms": 2127.25, "retry_count": 0, "fallback_used": false, "error": null}
+2026-08-01 17:44:27.688 | INFO     | app.utils.logging:log_request_event:92 - {"request_id": "321d25ea-33ec-41e8-b0aa-2a6bdbdcfb36", "provider": "gemini", "model": "gemini-flash-latest", "prompt_preview": "Hello!", "status": "success", "input_tokens": 3, "output_tokens": 9, "total_tokens": 12, "estimated_cost_usd": 3e-05, "latency_ms": 2557.28, "retry_count": 0, "fallback_used": false, "error": null}
