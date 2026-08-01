@@ -115,7 +115,7 @@ multi-provider-ai-gateway/
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/multi-provider-ai-gateway.git
+git clone https://github.com/kunalkirtak/multi-provider-ai-gateway.git
 cd multi-provider-ai-gateway
 
 python -m venv venv
