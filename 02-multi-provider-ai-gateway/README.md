@@ -141,7 +141,7 @@ configured; fallback simply skips any provider that isn't configured.
 | `GEMINI_API_KEY` | Google Gemini API key | — |
 | `OPENAI_DEFAULT_MODEL` | Default OpenAI model | `gpt-4o-mini` |
 | `ANTHROPIC_DEFAULT_MODEL` | Default Anthropic model | `claude-3-5-sonnet-20241022` |
-| `GEMINI_DEFAULT_MODEL` | Default Gemini model | `gemini-1.5-flash` |
+| `GEMINI_DEFAULT_MODEL` | Default Gemini model | `gemini-flash-latest` |
 | `DEFAULT_PROVIDER` | Provider used when the request omits one | `openai` |
 | `FALLBACK_ORDER` | Comma-separated fallback order | `openai,anthropic,gemini` |
 | `ENABLE_FALLBACK` | Master switch for fallback behavior | `true` |
