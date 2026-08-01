@@ -100,6 +100,7 @@ multi-provider-ai-gateway/
 │       ├── logging.py           # Loguru setup + structured request logging
 │       ├── pricing.py           # per-model USD/1M-token pricing table
 │       └── metrics.py           # in-process metrics aggregation
+├── assets/                      # local running output images
 ├── logs/
 │   └── requests.log             # rotating structured request log
 ├── notebooks/
