@@ -93,7 +93,7 @@ llm-playground-lab/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/llm-playground-lab.git
+git clone https://github.com/kunalkirtak/llm-playground-lab.git
 cd llm-playground-lab
 
 # 2. Create and activate a virtual environment
@@ -142,23 +142,13 @@ or open it directly in Google Colab.
 
 ## Screenshots
 
-> Add screenshots of the Playground, Compare, and Export tabs here once the app is
 > running locally.
 
 ```
 assets/playground.png
-assets/compare.png
-assets/export.png
+
 ```
 
----
-
-## Demo
-
-> Add a link to a hosted demo (Streamlit Community Cloud) or a short screen recording
-> here once deployed.
-
----
 
 ## Future Improvements
 
