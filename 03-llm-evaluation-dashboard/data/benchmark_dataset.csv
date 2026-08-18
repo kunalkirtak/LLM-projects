@@ -1,0 +1,16 @@
+question,expected_answer,category,difficulty,reference_keywords
+What is the powerhouse of the cell?,The mitochondria is the powerhouse of the cell because it produces ATP through cellular respiration.,Biology,Easy,mitochondria|ATP|cellular respiration
+What is the capital of France?,The capital of France is Paris.,Geography,Easy,Paris|France
+Who wrote the play Romeo and Juliet?,Romeo and Juliet was written by William Shakespeare.,Literature,Easy,Shakespeare|Romeo and Juliet
+What is the time complexity of binary search?,Binary search runs in O(log n) time because it halves the search space at every step.,Computer Science,Medium,O(log n)|halves|search space
+What causes seasons on Earth?,Seasons are caused by the tilt of Earth's axis as it orbits the Sun.,Science,Medium,tilt|axis|orbit|Sun
+What is the boiling point of water at sea level in Celsius?,Water boils at 100 degrees Celsius at sea level.,Science,Easy,100|Celsius|sea level
+Explain the difference between supervised and unsupervised learning.,Supervised learning uses labeled data to train models while unsupervised learning finds patterns in unlabeled data.,Machine Learning,Medium,labeled data|unlabeled data|patterns
+What year did World War II end?,World War II ended in 1945.,History,Easy,1945
+What is the largest planet in our solar system?,Jupiter is the largest planet in our solar system.,Astronomy,Easy,Jupiter|largest planet
+What is a hash table used for in computer science?,"A hash table stores key-value pairs and provides fast average-case O(1) lookup, insertion, and deletion.",Computer Science,Medium,key-value|O(1)|lookup
+What is the primary function of red blood cells?,Red blood cells transport oxygen from the lungs to the rest of the body using hemoglobin.,Biology,Medium,oxygen|hemoglobin|lungs
+What is the Pythagorean theorem?,"The Pythagorean theorem states that in a right triangle, a squared plus b squared equals c squared.",Mathematics,Easy,right triangle|a squared|b squared|c squared
+What is overfitting in machine learning?,"Overfitting occurs when a model learns the training data too well, including its noise, and fails to generalize to new data.",Machine Learning,Hard,training data|noise|generalize
+Who painted the Mona Lisa?,The Mona Lisa was painted by Leonardo da Vinci.,Art,Easy,Leonardo da Vinci
+What is the chemical formula for table salt?,"The chemical formula for table salt is NaCl, sodium chloride.",Chemistry,Easy,NaCl|sodium chloride
