@@ -133,7 +133,7 @@ llm-evaluation-dashboard/
 ## Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/kunalkirtak/LLM-projects/tree/main/03-llm-evaluation-dashboard
 cd llm-evaluation-dashboard
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
